@@ -18,6 +18,14 @@ body, html{
     background-color: #dff9fb;
 }
 
+figure{
+    display: block;
+    margin-block-start: initial;
+    margin-block-end: initial;
+    margin-inline-start: initial;
+    margin-inline-end: initial;
+}
+
 /* *{
     margin: ;
 } */
@@ -395,8 +403,9 @@ a{
 .adv__label{
     display: block;
     font-size: 1.3rem;
-    box-sizing: border-box;
+    font-weight: 600;
     text-align: center;
+    box-sizing: border-box;
     padding: 0.5rem;
     margin: 0;
 }
@@ -511,7 +520,10 @@ a{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
 
+.footer-bar__copyright{
+    margin-right: 5px;
 }
 
 /* END OF FOOTER */
