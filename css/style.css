@@ -1,0 +1,517 @@
+/* 
+    Czcionki:
+font-family: 'Akaya Telivigala', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sriracha', cursive;
+
+*/
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    margin: auto auto;
+    height: 100%;
+    width: 100%;
+    color: #090722;
+    background-color: #dff9fb;
+}
+
+/* *{
+    margin: ;
+} */
+
+a{
+    text-decoration: none;
+    color: #130f40;
+}
+
+/* COMMON */
+
+.container{
+    width: 100%;
+}
+
+.container__item{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.container--center-x-y{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pin-marker{
+    font-size: 1.5rem;
+}
+
+.pin-marker--deep-blue{
+    color: #130f40;
+}
+
+.logo{
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Sriracha', cursive;
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+}
+
+.logo--color-snowy{
+    color: #dff9fb;
+}
+
+.logo--color-white{
+    color: white;
+}
+
+/* END OF COMMON */
+
+/* NAV */
+
+.nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(0%, 0%);
+    height: 3rem;
+    background-color: #f0932b;
+    z-index: 999;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.nav-bar__item{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+    max-height: 100%;
+}
+
+.nav-bar__link{
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    min-width: 150px;
+    height: 100%;
+
+    text-align: center;
+    font-size: 1.2rem;
+
+    transition: background-color 0.2s ease-in;
+
+}
+
+.nav-bar__link:hover{
+    background-color: #ffbe76;
+}
+
+.nav-bar__link--snowy{
+    color: #dff9fb;
+}
+
+.nav-bar__link--white{
+    color: white;
+}
+
+/* END OF NAV */
+
+/* ENTRY */
+
+.entry{
+    background-color: #130f40;
+    margin-top: 3rem;
+}
+
+.entry-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 500px;
+    box-sizing: border-box;
+    padding: 0 5%;
+    background-image: url(../img/chair-row2.jpg);
+    background-clip: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
+.entry-area__item{
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.entry-area__header{
+    letter-spacing: 0.5px;
+    margin-bottom: 3rem;
+    width: 100%;
+    font-size: 3rem;
+    padding: 0;
+    color: white;
+}
+
+.entry-area__paragraph{
+    margin-bottom: 2rem;
+    padding: 0;
+    width: 70%;
+    max-width: 600px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.entry-area__button-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.entry-area__button{
+    background-color:#f9ca24;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    min-height: 3rem;
+    min-width: 250px;
+    
+    text-align: center;
+    color: #130f40;
+    font-size: 1.5rem;
+
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 40%);
+    box-shadow: 1px 1px 5px rgba(0,0,0,20%);
+
+    transition: background-color 0.5s ease-in-out;
+}
+
+.entry-area__button:hover{
+    background-color: #f6e58d;
+}
+
+/* END OF ENTRY */
+
+/* ROW */
+
+.row{
+    background-color: #dff9fb;
+    padding: 2rem 0;
+}
+
+.row__area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.row__item{
+    border-radius: 9px 9px 0 0;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 20%);
+    box-shadow: 1px 1px 5px rgba(0,0,0,15%);
+    background-color: rgb(232, 233, 255);
+    overflow: hidden;
+}
+
+/* END OF ROW */
+
+/* SECTION */
+
+.section{
+    width: 100%;
+}
+
+.section__item{
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.section__item--wider-padding{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* END OF SECTION */
+
+/* INTRODUCTION */
+
+.introduction{
+    display: flex;
+    flex-direction: row;
+
+    background-color: #f6e58d;
+}
+
+.introduction__item{
+    flex-basis: 50%;
+    padding: 0 1rem;
+}
+
+.introduction__header{
+    margin: 1rem 0 ;
+    letter-spacing: 0.5px;
+    font-size: 1.3rem;
+    color: navy;
+}
+
+.introduction__paragraph{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.introduction__list{
+    padding-left: 0rem;
+}
+
+.introduction__list-element{
+    list-style-position: inside;
+    list-style-type: '🌍 ';
+    margin-bottom: 0.2rem;
+}
+
+.introduction__profile{
+    background-image: url(../img/chairman.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+/* END OF INTRODUCTION */
+
+/* ARTICLE */
+
+/* .article{
+
+} */
+
+.article__header{
+    display: block;
+    letter-spacing: 0.5px;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    box-sizing: border-box;
+    padding: 0 3rem;
+    text-align: center;
+    color: #130f40;
+}
+
+.article__paragraph{
+    font-size: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+}
+
+.article__disclaimer-area{
+   padding-left: 0; 
+   margin-top: 0.5rem;
+   margin-bottom: 0.5rem;
+}
+
+.article__disclaimer{
+    list-style-position: inside;
+    list-style-type: '*';
+    font-size: 0.7rem;
+}
+
+/* END OF ARTICLE */
+
+/* ADV */
+
+.adv{
+    background-color: #a5b476;
+}
+
+.adv--more-b-padding{
+    padding-bottom: 2rem;
+}
+
+.adv__main-header{
+    margin: 0;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+
+.adv__container{
+    display: flex;
+    flex-direction: row;
+}
+
+.adv__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 33.3333%;
+    margin: 0rem 1rem;
+    padding: 0.5rem;
+    background-color: rgb(225,225,225);
+    border-radius: 7px;
+}
+
+.adv__logo-area{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 0;
+}
+
+.adv__logo{
+    position: relative;
+    width: 4rem;
+    margin: auto auto;
+    border-radius: 50%;
+    cursor: help;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.adv__logo:hover{
+    transform: scale(1.1);
+}
+
+.adv__label{
+    display: block;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.adv__list{
+    margin: 0;
+    padding-left: 0rem;
+    margin-bottom: 1rem;
+}
+
+.adv__list-element{
+    list-style-position: inside;
+    list-style-type: square;
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+.adv__button-area{
+    text-align: center;
+    width: 100%;
+}
+
+.adv__button{
+    display: block;
+    font-size: 1.1rem;
+    color: #130f40;
+    background-color: #f9ca24;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin: 0;
+    width: 100%;
+    transition: background-color 0.2s ease-in;
+    border-radius: 5px;
+    outline: none;
+}
+
+.adv__button:hover{
+    background-color: #f3dd71;
+}
+
+/* END OF ADV */
+
+/* SIDE-BAR */
+
+.side-bar{
+    margin-left: 2rem;
+    min-width: 250px;
+}
+
+.side-bar__header{
+    margin: 0;
+    padding: 1rem 0.5rem;
+    min-height: 2rem;
+    
+    text-align: center;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.side-bar__header--orange{
+    background-color: #df851f;
+}
+
+.side-bar__header--navy{
+    background-color: #30336b;
+}
+
+.side-bar__header--black{
+    background-color: black;
+}
+
+.side-bar__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.6rem 0.4rem;
+    background-color: rgb(232, 233, 255);
+    font-size: 1.05rem;
+    text-align: center;
+    color: #130f40;
+}
+
+.side-bar__link:hover{
+    background-color: rgb(220, 221, 253)
+}
+
+/* END OF SIDE-BAR */
+
+/* FOOTER */
+
+.footer{
+    background-color: #130f40;
+    height: 2rem;
+}
+
+.footer-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+
+.footer-bar__item{
+    height: 100%;
+}
+
+.footer-bar__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/* END OF FOOTER */
